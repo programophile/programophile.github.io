@@ -4,35 +4,42 @@ import ScrollReveal from '../Common/ScrollReveal';
 
 const SkillsSection = () => {
   const skills = [
-    { name: 'React', icon: '⚛️', level: 95, color: '#61DAFB' },
-    { name: 'TypeScript', icon: '📘', level: 90, color: '#3178C6' },
-    { name: 'Node.js', icon: '🟢', level: 88, color: '#339933' },
-    { name: 'Python', icon: '🐍', level: 85, color: '#3776AB' },
-    { name: 'TailwindCSS', icon: '🎨', level: 92, color: '#06B6D4' },
-    { name: 'Next.js', icon: '▲', level: 87, color: '#000000' },
-    { name: 'GraphQL', icon: '◈', level: 83, color: '#E10098' },
-    { name: 'MongoDB', icon: '🍃', level: 86, color: '#47A248' },
-    { name: 'AWS', icon: '☁️', level: 80, color: '#FF9900' },
-    { name: 'Docker', icon: '🐳', level: 82, color: '#2496ED' },
-    { name: 'Git', icon: '📦', level: 93, color: '#F05032' },
-    { name: 'Figma', icon: '🎯', level: 88, color: '#F24E1E' },
+    { name: 'Python', level: 90, color: '#3776AB' },
+    { name: 'Java', level: 85, color: '#007396' },
+    { name: 'JavaScript', level: 80, color: '#F7DF1E' },
+    { name: 'React.js', level: 85, color: '#61DAFB' },
+    { name: 'Node.js', level: 80, color: '#339933' },
+    { name: 'MongoDB', level: 80, color: '#47A248' },
+    { name: 'Express.js', level: 80, color: '#000000' },
+    { name: 'PHP', level: 75, color: '#777BB4' },
+    { name: 'TensorFlow', level: 85, color: '#FF6F00' },
+    { name: 'Scikit-learn', level: 85, color: '#F7931E' },
+    { name: 'Keras', level: 80, color: '#D00000' },
+    { name: 'Hugging Face', level: 85, color: '#FFD21E' },
+    { name: 'Pandas', level: 88, color: '#150458' },
+    { name: 'NumPy', level: 88, color: '#013243' },
+    { name: 'OpenCV', level: 80, color: '#5C3EE8' },
+    { name: 'BERT/NLP', level: 85, color: '#4285F4' },
+    { name: 'Git/GitHub', level: 90, color: '#F05032' },
+    { name: 'Streamlit', level: 85, color: '#FF4B4B' },
   ];
 
   const categories = [
     {
-      title: 'Frontend',
-      skills: skills.slice(0, 4),
-      gradient: 'from-neon-blue to-neon-purple',
+      title: 'Programming Languages',
+      skills: skills.slice(0, 3),
     },
     {
-      title: 'Backend',
-      skills: skills.slice(4, 8),
-      gradient: 'from-neon-purple to-neon-pink',
+      title: 'Web Development',
+      skills: skills.slice(3, 8),
     },
     {
-      title: 'DevOps & Tools',
+      title: 'Machine Learning & AI',
       skills: skills.slice(8, 12),
-      gradient: 'from-neon-pink to-neon-green',
+    },
+    {
+      title: 'Data Science & Tools',
+      skills: skills.slice(12, 18),
     },
   ];
 
@@ -45,17 +52,17 @@ const SkillsSection = () => {
             className="inline-block mb-4"
             whileHover={{ scale: 1.05 }}
           >
-            <span className="px-4 py-2 rounded-full bg-neon-green/10 border border-neon-green/30 text-neon-green text-sm font-medium">
-              🚀 Expertise
+            <span className="px-4 py-2 rounded-full bg-slate-800/50 border border-slate-700 text-gray-300 text-sm font-medium uppercase tracking-wider">
+              Technical Skills
             </span>
           </motion.div>
-          
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-            Skills & Technologies
+
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-white">
+            Expertise
           </h2>
-          
+
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-            A comprehensive toolkit built through years of experience and continuous learning.
+            Proficient in modern technologies across full-stack development and machine learning.
           </p>
         </ScrollReveal>
 
@@ -65,20 +72,17 @@ const SkillsSection = () => {
             <ScrollReveal key={catIndex} variant="fadeUp" delay={catIndex * 0.1}>
               <div>
                 {/* Category title */}
-                <motion.h3
-                  className={`text-2xl font-bold mb-6 bg-gradient-to-r ${category.gradient} bg-clip-text text-transparent`}
-                  whileHover={{ scale: 1.02 }}
-                >
+                <h3 className="text-xl font-semibold mb-4 text-white">
                   {category.title}
-                </motion.h3>
+                </h3>
 
                 {/* Skills grid */}
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                   {category.skills.map((skill, index) => (
-                    <SkillCard 
-                      key={skill.name} 
-                      skill={skill} 
-                      index={index} 
+                    <SkillCard
+                      key={skill.name}
+                      skill={skill}
+                      index={index}
                     />
                   ))}
                 </div>
@@ -91,10 +95,10 @@ const SkillsSection = () => {
         <ScrollReveal variant="fadeUp" delay={0.3} className="mt-20">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { label: 'Projects Completed', value: '50+' },
-              { label: 'Years Experience', value: '5+' },
-              { label: 'Happy Clients', value: '30+' },
-              { label: 'Code Commits', value: '10k+' },
+              { label: 'Projects Completed', value: '15+' },
+              { label: 'CGPA', value: '3.86/4.0' },
+              { label: 'GitHub Repos', value: '36+' },
+              { label: 'Research Areas', value: '3+' },
             ].map((stat, index) => (
               <motion.div
                 key={index}

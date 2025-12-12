@@ -20,8 +20,8 @@ const Hero = () => {
           transition={{ ...smoothTransition, delay: 0.2 }}
           className="mb-6"
         >
-          <span className="inline-block px-4 py-2 rounded-full bg-neon-blue/10 border border-neon-blue/30 text-neon-blue text-sm font-medium backdrop-blur-sm">
-            👋 Welcome to my portfolio
+          <span className="inline-block px-4 py-2 rounded-full bg-slate-800/50 border border-slate-700 text-gray-300 text-sm font-medium backdrop-blur-sm uppercase tracking-wider">
+            Portfolio
           </span>
         </motion.div>
 
@@ -40,7 +40,7 @@ const Hero = () => {
             transition={{ duration: 0.3 }}
             className="inline-block"
           >
-            Your Name
+            Sad Yeamin Sayem
           </motion.span>
         </motion.h1>
 
@@ -52,7 +52,7 @@ const Hero = () => {
           transition={{ ...smoothTransition, delay: 0.6 }}
           className="text-xl sm:text-2xl md:text-3xl text-gray-300 mb-8 max-w-3xl mx-auto"
         >
-          Full Stack Developer • Designer • Creative Technologist
+          Full Stack Developer • ML Engineer • Researcher
         </motion.p>
 
         {/* Description */}
@@ -63,8 +63,9 @@ const Hero = () => {
           transition={{ ...smoothTransition, delay: 0.8 }}
           className="text-base sm:text-lg text-gray-400 mb-12 max-w-2xl mx-auto"
         >
-          Crafting digital experiences with modern web technologies. 
-          Passionate about building beautiful, performant applications.
+          Computer Science student at BRAC University with a 3.86 CGPA.
+          Specializing in machine learning, natural language processing, and full-stack development.
+          Merit scholarship recipient and Undergraduate Teaching Assistant.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -75,21 +76,23 @@ const Hero = () => {
           transition={{ ...smoothTransition, delay: 1 }}
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
-          <motion.button
-            whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(0, 240, 255, 0.6)' }}
-            whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 bg-gradient-to-r from-neon-blue to-neon-purple rounded-full text-white font-semibold shadow-lg shadow-neon-blue/50 transition-all duration-300"
-          >
-            View My Work
-          </motion.button>
-          
-          <motion.button
+          <motion.a
+            href="#projects"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 border-2 border-neon-blue/50 rounded-full text-white font-semibold hover:bg-neon-blue/10 transition-all duration-300 backdrop-blur-sm"
+            className="px-8 py-4 bg-white text-slate-900 rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
           >
-            Get In Touch
-          </motion.button>
+            View Projects
+          </motion.a>
+
+          <motion.a
+            href="#contact"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="px-8 py-4 border-2 border-slate-600 rounded-lg text-white font-semibold hover:bg-slate-800 transition-all duration-300 backdrop-blur-sm"
+          >
+            Contact Me
+          </motion.a>
         </motion.div>
 
         {/* Scroll indicator */}

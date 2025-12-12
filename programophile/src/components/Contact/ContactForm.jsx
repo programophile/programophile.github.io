@@ -74,17 +74,17 @@ const ContactForm = () => {
             className="inline-block mb-4"
             whileHover={{ scale: 1.05 }}
           >
-            <span className="px-4 py-2 rounded-full bg-neon-pink/10 border border-neon-pink/30 text-neon-pink text-sm font-medium">
-              📬 Get In Touch
+            <span className="px-4 py-2 rounded-full bg-slate-800/50 border border-slate-700 text-gray-300 text-sm font-medium uppercase tracking-wider">
+              Contact
             </span>
           </motion.div>
-          
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
-            Let's Work Together
+
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-white">
+            Get In Touch
           </h2>
-          
+
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-            Have a project in mind? Drop me a message and let's create something amazing!
+            Interested in collaboration? Send a message to discuss opportunities.
           </p>
         </ScrollReveal>
 
@@ -183,26 +183,13 @@ const ContactForm = () => {
               disabled={isSubmitting}
               whileHover={{ scale: isSubmitting ? 1 : 1.02 }}
               whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
-              className={`w-full py-4 rounded-lg font-semibold text-white transition-all duration-300 ${
+              className={`w-full py-4 rounded-lg font-semibold transition-all duration-300 ${
                 isSubmitting
-                  ? 'bg-slate-700 cursor-not-allowed'
-                  : 'bg-gradient-to-r from-neon-blue to-neon-purple shadow-lg shadow-neon-blue/50'
+                  ? 'bg-slate-700 text-gray-400 cursor-not-allowed'
+                  : 'bg-white text-slate-900 shadow-lg hover:shadow-xl'
               }`}
             >
-              {isSubmitting ? (
-                <span className="flex items-center justify-center">
-                  <motion.span
-                    animate={{ rotate: 360 }}
-                    transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
-                    className="inline-block mr-2"
-                  >
-                    ⏳
-                  </motion.span>
-                  Sending...
-                </span>
-              ) : (
-                'Send Message'
-              )}
+              {isSubmitting ? 'Sending...' : 'Send Message'}
             </motion.button>
 
             {/* Success message */}
@@ -210,9 +197,9 @@ const ContactForm = () => {
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="mt-4 p-4 bg-neon-green/10 border border-neon-green/30 rounded-lg text-neon-green text-center"
+                className="mt-4 p-4 bg-green-900/20 border border-green-700 rounded-lg text-green-400 text-center"
               >
-                ✅ Message sent successfully! I'll get back to you soon.
+                Message sent successfully! I'll get back to you soon.
               </motion.div>
             )}
           </motion.form>
@@ -220,19 +207,17 @@ const ContactForm = () => {
 
         {/* Contact info */}
         <ScrollReveal variant="fadeUp" delay={0.4}>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-12">
             {[
-              { icon: '📧', label: 'Email', value: 'hello@example.com' },
-              { icon: '📱', label: 'Phone', value: '+1 234 567 890' },
-              { icon: '📍', label: 'Location', value: 'San Francisco, CA' },
+              { label: 'Email', value: 'programophile@gmail.com' },
+              { label: 'Location', value: 'Dhaka, Bangladesh' },
             ].map((item, index) => (
               <motion.div
                 key={index}
-                whileHover={{ y: -5, scale: 1.02 }}
-                className="bg-slate-900/50 backdrop-blur-sm rounded-xl p-6 border border-slate-800 hover:border-neon-blue/50 transition-colors duration-300 text-center"
+                whileHover={{ y: -5 }}
+                className="bg-slate-900/50 backdrop-blur-sm rounded-xl p-6 border border-slate-800 hover:border-slate-700 transition-colors duration-300 text-center"
               >
-                <div className="text-3xl mb-2">{item.icon}</div>
-                <div className="text-gray-400 text-sm mb-1">{item.label}</div>
+                <div className="text-gray-400 text-sm mb-1 uppercase tracking-wider">{item.label}</div>
                 <div className="text-white font-medium">{item.value}</div>
               </motion.div>
             ))}

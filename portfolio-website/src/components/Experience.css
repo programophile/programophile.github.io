@@ -148,6 +148,30 @@
   font-weight: 500;
 }
 
+/* Activities list for education entries */
+.edu-activities {
+  margin-top: 0.5rem;
+}
+.edu-activities .label {
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-right: 0.5rem;
+}
+.edu-activities ul {
+  margin-top: 0.4rem;
+  display: flex;
+  gap: 0.5rem 0.75rem;
+  flex-wrap: wrap;
+}
+.edu-activities li {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
 @media (max-width: 1024px) {
   .experience-headers {
     grid-template-columns: 1fr;

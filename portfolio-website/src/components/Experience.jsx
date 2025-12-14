@@ -65,35 +65,37 @@ const timeline = [
       "Worked with OpenCV and classical CV pipelines on robotics-focused tasks.",
     ],
   },
-  {
-    role: "Contributor",
-    org: "BRACU DUBURI",
-    period: "Jun 2023 – Oct 2023",
-    bullets: [
-      "On-site",
-      "Contributed to project tasks and team deliverables within the robotics team.",
-    ],
-  },
+  // {
+  //   role: "Contributor",
+  //   org: "BRACU DUBURI",
+  //   period: "Jun 2023 – Oct 2023",
+  //   bullets: [
+  //     "On-site",
+  //     "Contributed to project tasks and team deliverables within the robotics team.",
+  //   ],
+  // },
 ];
 
 const education = [
   {
-    degree: "Master of Science - MS, Computer Science and Engineering",
+    degree: "Bachelor of Science - BS, Computer Science",
     org: "BRAC University",
-    status: "Enrolled",
-    period: "Sep 2025",
+    status: "Grade: 3.86",
+    activities: ["Merit scholarship every semester", "Skills: PHP, SciPy, +5"],
+    period: "2022 - 2026",
   },
   {
-    degree: "Bachelor of Science in Computer Science and Engineering",
-    org: "BRAC University",
-    status: "CGPA: 3.95 / 4.00",
-    period: "01/2020 – 01/2024",
+    degree: "HSC, Science",
+    org: "Notre Dame College Mymensingh",
+    status: "Grade: 5",
+    period: "Jun 2018 - Jun 2020",
   },
   {
-    degree: "GCE As and A Level",
-    org: "Cambridge Assessment Int. Education (Loreeto School)",
-    status: "Completed",
-    period: "06/2017 – 06/2019",
+    degree: "SSC, Science",
+    org: "Chandipasha Govt. High School",
+    status: "Grade: 4.89",
+    activities: ["Bangladesh Scouts", "Dancing (group)"],
+    period: "Jan 2012 - Feb 2018",
   },
 ];
 
@@ -180,6 +182,16 @@ const Experience = () => {
                   <div className="meta">
                     <span className="status">{e.status}</span>
                   </div>
+                  {e.activities && e.activities.length > 0 && (
+                    <div className="edu-activities">
+                      <span className="label">Activities</span>
+                      <ul>
+                        {e.activities.map((a) => (
+                          <li key={a}>{a}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </motion.div>
               ))}
             </div>

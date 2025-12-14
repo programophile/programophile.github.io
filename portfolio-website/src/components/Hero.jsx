@@ -32,20 +32,9 @@ const Hero = () => {
   return (
     <section id="home" className="hero">
       <div className="hero-background">
-        <div className="meteor-container">
-          {[...Array(20)].map((_, i) => (
-            <div
-              key={i}
-              className="meteor"
-              style={{
-                top: `${Math.random() * 100}%`,
-                left: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 5}s`,
-                animationDuration: `${3 + Math.random() * 4}s`,
-              }}
-            ></div>
-          ))}
-        </div>
+        <div className="bg-blob blob-1" />
+        <div className="bg-blob blob-2" />
+        <div className="bg-blob blob-3" />
       </div>
 
       <div className="container hero-container">

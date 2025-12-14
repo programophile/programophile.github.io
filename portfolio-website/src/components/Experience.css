@@ -10,16 +10,24 @@
   margin-bottom: 1.5rem;
 }
 
+/* Left header (Experience) should align its text to the left */
+.experience-headers .section-title {
+  text-align: left;
+}
+
 .section-title.align-right {
   text-align: right;
 }
 
 /* Ensure the decorative underline aligns with text for both headers */
 .experience-headers .section-title::after {
-  margin-left: 0; /* left header underline starts at left */
+  left: 0; /* align underline to the left edge */
+  transform: none;
 }
 .experience-headers .section-title.align-right::after {
-  margin-left: auto; /* right header underline sticks to the right */
+  left: auto;
+  right: 0; /* align underline to the right edge */
+  transform: none;
 }
 
 .experience-grid {

@@ -73,7 +73,6 @@ const Hero = () => {
             {/* Replace with your name */}
             John Doe
           </motion.h1>
-
           <motion.h2
             className="hero-subtitle"
             initial={{ opacity: 0, y: 20 }}
@@ -106,6 +105,9 @@ const Hero = () => {
             <button className="btn btn-outline" onClick={scrollToProjects}>
               View Projects
             </button>
+            <a href="/cv.pdf" className="btn btn-outline" download>
+              Download CV
+            </a>
           </motion.div>
 
           <motion.div

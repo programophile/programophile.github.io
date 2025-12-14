@@ -1,32 +1,32 @@
-import { useEffect, useRef } from 'react'
-import { motion } from 'framer-motion'
-import './About.css'
+import { useEffect, useRef } from "react";
+import { motion } from "framer-motion";
+import "./About.css";
 
 const About = () => {
-  const aboutRef = useRef(null)
+  const aboutRef = useRef(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('visible')
+            entry.target.classList.add("visible");
           }
-        })
+        });
       },
       { threshold: 0.1 }
-    )
+    );
 
     if (aboutRef.current) {
-      observer.observe(aboutRef.current)
+      observer.observe(aboutRef.current);
     }
 
     return () => {
       if (aboutRef.current) {
-        observer.unobserve(aboutRef.current)
+        observer.unobserve(aboutRef.current);
       }
-    }
-  }, [])
+    };
+  }, []);
 
   return (
     <section id="about" className="about" ref={aboutRef}>
@@ -50,38 +50,38 @@ const About = () => {
             viewport={{ once: true }}
           >
             <p className="about-paragraph">
-              {/* Replace with your professional summary */}
-              Hello! I'm a passionate Full Stack Developer with a love for creating
-              elegant solutions to complex problems. My journey in web development
-              started several years ago, and I've been constantly learning and evolving
-              ever since.
+              From the ashes, I shall rise. I'm Sad Yeamin Sayem — a Computer
+              Science student at BRAC University in Bangladesh, actively
+              learning and building in AI/ML and NLP. I enjoy turning ideas into
+              practical systems and exploring research-driven approaches to real
+              problems.
             </p>
 
             <p className="about-paragraph">
-              I specialize in building exceptional digital experiences. Whether it's a
-              responsive website, a complex web application, or anything in between, I
-              bring both technical expertise and creative problem-solving to every project.
+              On GitHub, I maintain projects across Python, JavaScript/MERN, and
+              Jupyter notebooks. I like clean, readable code and reproducible
+              setups. Recently, I’ve been focusing on neural networks, computer
+              vision, and language processing.
             </p>
 
             <p className="about-paragraph">
-              When I'm not coding, you can find me exploring new technologies, contributing
-              to open-source projects, or sharing knowledge with the developer community.
-              I believe in writing clean, maintainable code and creating user experiences
-              that make a difference.
+              When not coding, I’m usually learning, experimenting, or
+              collaborating on research ideas. I’m open to opportunities and
+              collaborations in ML/NLP.
             </p>
 
             <div className="about-highlights">
               <div className="highlight-item">
-                <h3 className="highlight-number">3+</h3>
-                <p className="highlight-label">Years Experience</p>
+                <h3 className="highlight-number">36</h3>
+                <p className="highlight-label">Public Repos</p>
               </div>
               <div className="highlight-item">
-                <h3 className="highlight-number">50+</h3>
-                <p className="highlight-label">Projects Completed</p>
+                <h3 className="highlight-number">24</h3>
+                <p className="highlight-label">Followers</p>
               </div>
               <div className="highlight-item">
-                <h3 className="highlight-number">30+</h3>
-                <p className="highlight-label">Happy Clients</p>
+                <h3 className="highlight-number">Bangladesh</h3>
+                <p className="highlight-label">Location</p>
               </div>
             </div>
           </motion.div>
@@ -96,17 +96,17 @@ const About = () => {
             <div className="about-image-container">
               <div className="about-image-bg"></div>
               <div className="about-image">
-                {/* Replace with your image */}
-                <div className="placeholder-image">
-                  <span>Your Photo</span>
-                </div>
+                <img
+                  src="https://avatars.githubusercontent.com/u/98210531?v=4"
+                  alt="Sad Yeamin Sayem"
+                />
               </div>
             </div>
           </motion.div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;

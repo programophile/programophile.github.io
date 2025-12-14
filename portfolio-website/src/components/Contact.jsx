@@ -1,34 +1,28 @@
-import { motion } from 'framer-motion'
-import { FaEnvelope, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
-import './Contact.css'
+import { motion } from "framer-motion";
+import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import "./Contact.css";
 
 const Contact = () => {
   const contactInfo = [
     {
       icon: <FaEnvelope />,
-      label: 'Email',
-      value: 'your.email@example.com',
-      link: 'mailto:your.email@example.com'
+      label: "Email",
+      value: "programophile@gamil.com",
+      link: "mailto:programophile@gamil.com",
     },
     {
       icon: <FaGithub />,
-      label: 'GitHub',
-      value: 'github.com/yourusername',
-      link: 'https://github.com/yourusername'
+      label: "GitHub",
+      value: "github.com/programophile",
+      link: "https://github.com/programophile",
     },
     {
       icon: <FaLinkedin />,
-      label: 'LinkedIn',
-      value: 'linkedin.com/in/yourprofile',
-      link: 'https://linkedin.com/in/yourprofile'
+      label: "LinkedIn",
+      value: "linkedin.com/in/sad-yeamin-sayem-8a68a7277",
+      link: "https://www.linkedin.com/in/sad-yeamin-sayem-8a68a7277/",
     },
-    {
-      icon: <FaTwitter />,
-      label: 'Twitter',
-      value: '@yourusername',
-      link: 'https://twitter.com/yourusername'
-    }
-  ]
+  ];
 
   return (
     <section id="contact" className="contact">
@@ -53,9 +47,10 @@ const Contact = () => {
           <div className="contact-text">
             <h3 className="contact-heading">Let's Work Together</h3>
             <p className="contact-description">
-              I'm currently available for freelance work and full-time opportunities.
-              If you have a project that you want to get started, think you need my
-              help with something, or just fancy saying hey, then get in touch.
+              I'm currently available for freelance work and full-time
+              opportunities. If you have a project that you want to get started,
+              think you need my help with something, or just fancy saying hey,
+              then get in touch.
             </p>
           </div>
 
@@ -90,7 +85,7 @@ const Contact = () => {
             viewport={{ once: true }}
           >
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:programophile@gamil.com"
               className="btn btn-primary btn-large"
             >
               Send Me an Email
@@ -99,7 +94,7 @@ const Contact = () => {
         </motion.div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

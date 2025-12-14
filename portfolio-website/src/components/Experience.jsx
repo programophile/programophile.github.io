@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import "./Experience.css";
 
 const timeline = [
+  // Previous placeholders (kept for reference)
+  /*
   {
     role: "Adjunct Lecturer",
     org: "BRAC University",
@@ -35,6 +37,41 @@ const timeline = [
     bullets: [
       "Assisted merchants with bKash Payment Gateway API integration.",
       "Ran UAT, validated API responses, and built a demo Windows Forms app.",
+    ],
+  },
+  */
+
+  // Added from LinkedIn
+  {
+    role: "Undergraduate Teaching Assistant",
+    org: "BRAC University · Part-time",
+    period: "Jul 2025 – Present",
+    bullets: [
+      "Dhaka, Bangladesh · Hybrid",
+      "Student Tutor — CSE110: Programming Language I",
+      "Selected through CGPA-based shortlisting, a written exam, and final interview.",
+      "Assist the course instructor in teaching core programming concepts using Java.",
+      "Offer one-on-one consultations: debugging, logic building, and OOP principles.",
+      "Facilitate lab sessions, answer queries, and improve first-year learning experience.",
+      "Recognized for clear communication, patience, and a student‑friendly approach.",
+    ],
+  },
+  {
+    role: "Junior Member of Machine Vision",
+    org: "BRACU DUBURI (Apprenticeship)",
+    period: "Oct 2023 – Jan 2025",
+    bullets: [
+      "Dhaka, Bangladesh",
+      "Worked with OpenCV and classical CV pipelines on robotics-focused tasks.",
+    ],
+  },
+  {
+    role: "Contributor",
+    org: "BRACU DUBURI",
+    period: "Jun 2023 – Oct 2023",
+    bullets: [
+      "On-site",
+      "Contributed to project tasks and team deliverables within the robotics team.",
     ],
   },
 ];

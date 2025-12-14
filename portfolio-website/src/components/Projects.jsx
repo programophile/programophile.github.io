@@ -6,57 +6,61 @@ import "./Projects.css";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
+      title: "Codeforces Problems",
       description:
-        "A full-stack e-commerce platform with user authentication, product management, shopping cart, and payment integration. Built with modern technologies for optimal performance.",
-      tech: ["React", "Node.js", "MongoDB", "Stripe"],
-      github: "https://github.com/yourusername/project1",
-      live: "https://project1.demo.com",
+        "Personal solutions and practice for Codeforces problems; focuses on algorithms and data structures in Python.",
+      tech: ["Python", "DSA"],
+      github: "https://github.com/programophile/Codeforces-Problems",
+      live: "",
       image: null,
     },
     {
-      title: "Task Management App",
+      title: "Face Detection (OpenCV)",
       description:
-        "A collaborative task management application with real-time updates, team collaboration features, and advanced filtering options. Perfect for remote teams.",
-      tech: ["Next.js", "TypeScript", "PostgreSQL", "Socket.io"],
-      github: "https://github.com/yourusername/project2",
-      live: "https://project2.demo.com",
+        "Face detection experiments with OpenCV in Python; classic CV pipeline and cascades.",
+      tech: ["Python", "OpenCV"],
+      github: "https://github.com/programophile/Face-Detection---OpenCv-python",
+      live: "",
       image: null,
     },
     {
-      title: "Weather Dashboard",
+      title: "CGPA Calculator (BRACU)",
       description:
-        "An interactive weather dashboard that provides real-time weather data, forecasts, and beautiful visualizations. Supports multiple locations and units.",
-      tech: ["React", "Tailwind CSS", "OpenWeather API"],
-      github: "https://github.com/yourusername/project3",
-      live: "https://project3.demo.com",
+        "A utility to calculate CGPA for BRAC University students; simple UI and semester inputs.",
+      tech: ["JavaScript"],
+      github:
+        "https://github.com/programophile/CGPA-Calculator-For-BRAC-University-Students-BRACU",
+      live: "",
       image: null,
     },
     {
-      title: "Social Media App",
+      title: "Hospital Management (PHP)",
       description:
-        "A modern social media platform with posts, comments, likes, user profiles, and real-time notifications. Features responsive design and smooth animations.",
-      tech: ["React", "Firebase", "Material-UI"],
-      github: "https://github.com/yourusername/project4",
-      live: "https://project4.demo.com",
+        "Doctor–Patient–Admin communications and management built with PHP/HTML/CSS.",
+      tech: ["PHP", "HTML", "CSS"],
+      github:
+        "https://github.com/programophile/HospitalManagement-Doctor-Patient-Admin-communation--PHP-HTML-CSS",
+      live: "",
       image: null,
     },
     {
-      title: "Portfolio Builder",
+      title: "CSE440 NLP Assignments",
       description:
-        "A SaaS platform that allows users to create beautiful portfolio websites without coding. Includes drag-and-drop interface and multiple templates.",
-      tech: ["Next.js", "Express", "MongoDB", "AWS"],
-      github: "https://github.com/yourusername/project5",
-      live: "https://project5.demo.com",
+        "Course assignments exploring NLP tasks and transformer basics in notebooks.",
+      tech: ["Jupyter", "NLP"],
+      github:
+        "https://github.com/programophile/CSE440-BRACU-Natural-Language-Processing-Assignments-",
+      live: "",
       image: null,
     },
     {
-      title: "AI Chat Assistant",
+      title: "Hospital Nurse HR (MERN)",
       description:
-        "An intelligent chat assistant powered by AI that helps users with various tasks. Features natural language processing and context-aware responses.",
-      tech: ["React", "Python", "OpenAI API", "FastAPI"],
-      github: "https://github.com/yourusername/project6",
-      live: "https://project6.demo.com",
+        "MERN stack app for hospital nurse/HR workflows and management.",
+      tech: ["MongoDB", "Express", "React", "Node"],
+      github:
+        "https://github.com/programophile/Hospital-Nurse-Hr-Management---MERN_PROJECT",
+      live: "",
       image: null,
     },
   ];

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FaGithub, FaLinkedin, FaFacebookF, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { motion } from "framer-motion";
 import "./Hero.css";
 
@@ -59,8 +59,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
           >
-            {/* Replace with your name */}
-            John Doe
+            Sad Yeamin Sayem
           </motion.h1>
           <motion.h2
             className="hero-subtitle"
@@ -68,7 +67,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
-            Full Stack Developer
+            AI/ML & NLP · BRAC University, Bangladesh
           </motion.h2>
 
           <motion.p
@@ -106,7 +105,7 @@ const Hero = () => {
             transition={{ delay: 1.2, duration: 0.6 }}
           >
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/programophile"
               target="_blank"
               rel="noopener noreferrer"
               className="hero-social-link"
@@ -115,7 +114,7 @@ const Hero = () => {
               <FaGithub />
             </a>
             <a
-              href="https://linkedin.com/in/yourprofile"
+              href="https://www.linkedin.com/in/sad-yeamin-sayem-8a68a7277/"
               target="_blank"
               rel="noopener noreferrer"
               className="hero-social-link"
@@ -124,16 +123,7 @@ const Hero = () => {
               <FaLinkedin />
             </a>
             <a
-              href="https://facebook.com/yourprofile"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hero-social-link"
-              aria-label="Facebook"
-            >
-              <FaFacebookF />
-            </a>
-            <a
-              href="mailto:you@example.com"
+              href="mailto:programophile@gamil.com"
               className="hero-social-link"
               aria-label="Email"
             >

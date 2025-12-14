@@ -1,33 +1,33 @@
-import { FaGithub, FaLinkedin, FaTwitter, FaHeart } from 'react-icons/fa'
-import './Footer.css'
+import { FaGithub, FaLinkedin, FaTwitter, FaHeart } from "react-icons/fa";
+import "./Footer.css";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   const socialLinks = [
     {
       icon: <FaGithub />,
-      url: 'https://github.com/yourusername',
-      label: 'GitHub'
+      url: "https://github.com/programophile",
+      label: "GitHub",
     },
     {
       icon: <FaLinkedin />,
-      url: 'https://linkedin.com/in/yourprofile',
-      label: 'LinkedIn'
+      url: "https://www.linkedin.com/in/sad-yeamin-sayem-8a68a7277/",
+      label: "LinkedIn",
     },
     {
       icon: <FaTwitter />,
-      url: 'https://twitter.com/yourusername',
-      label: 'Twitter'
-    }
-  ]
+      url: "https://twitter.com/yourusername",
+      label: "Twitter",
+    },
+  ];
 
   const scrollToSection = (id) => {
-    const element = document.getElementById(id)
+    const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
+      element.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   return (
     <footer className="footer">
@@ -43,11 +43,36 @@ const Footer = () => {
           <div className="footer-section">
             <h4 className="footer-heading">Quick Links</h4>
             <nav className="footer-nav">
-              <a onClick={() => scrollToSection('home')} className="footer-link">Home</a>
-              <a onClick={() => scrollToSection('about')} className="footer-link">About</a>
-              <a onClick={() => scrollToSection('skills')} className="footer-link">Skills</a>
-              <a onClick={() => scrollToSection('projects')} className="footer-link">Projects</a>
-              <a onClick={() => scrollToSection('contact')} className="footer-link">Contact</a>
+              <a
+                onClick={() => scrollToSection("home")}
+                className="footer-link"
+              >
+                Home
+              </a>
+              <a
+                onClick={() => scrollToSection("about")}
+                className="footer-link"
+              >
+                About
+              </a>
+              <a
+                onClick={() => scrollToSection("skills")}
+                className="footer-link"
+              >
+                Skills
+              </a>
+              <a
+                onClick={() => scrollToSection("projects")}
+                className="footer-link"
+              >
+                Projects
+              </a>
+              <a
+                onClick={() => scrollToSection("contact")}
+                className="footer-link"
+              >
+                Contact
+              </a>
             </nav>
           </div>
 
@@ -72,12 +97,13 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p className="footer-copyright">
-            © {currentYear} Your Name. Made with <FaHeart className="heart-icon" /> by You
+            © {currentYear} Sad Yeamin Sayem. Made with{" "}
+            <FaHeart className="heart-icon" />
           </p>
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

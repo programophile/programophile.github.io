@@ -129,13 +129,6 @@ const Research = () => {
               >
                 Show {activeInterestTitle}
               </button>
-              <button
-                className="open-all-modal"
-                onClick={() => setShowAllModal(true)}
-                aria-label="Open all research"
-              >
-                All Research
-              </button>
             </div>
           </motion.div>
 
@@ -146,7 +139,16 @@ const Research = () => {
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
           >
-            <h3 className="papers-title">Research Works & Papers</h3>
+            <div className="papers-header">
+              <h3 className="papers-title">Research Works & Papers</h3>
+              <button
+                className="open-all-modal"
+                onClick={() => setShowAllModal(true)}
+                aria-label="Open all research"
+              >
+                All Research
+              </button>
+            </div>
             <div className="papers-list">
               {filteredPapers.map((p) => (
                 <div key={p.title} className="paper-card">

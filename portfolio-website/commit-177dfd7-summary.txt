@@ -1,0 +1,8 @@
+commit 177dfd70c0cac4682a98a4fabf06162363593527
+Author: Sayem- A ProgramoPhile <98210531+programophile@users.noreply.github.com>
+Date:   Sun Dec 14 23:26:43 2025 +0600
+
+    CI: auto-deploy to GitHub Pages via Actions
+
+A	.github/workflows/deploy.yml
+

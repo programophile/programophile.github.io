@@ -96,10 +96,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p className="footer-copyright">
-            © {currentYear} Sad Yeamin Sayem. Made with{" "}
-            <FaHeart className="heart-icon" />
-          </p>
+          <p className="footer-copyright">© {currentYear} Sad Yeamin Sayem</p>
         </div>
       </div>
     </footer>

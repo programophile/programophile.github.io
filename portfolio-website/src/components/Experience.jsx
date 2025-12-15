@@ -81,20 +81,25 @@ const education = [
     degree: "Bachelor of Science - BS, Computer Science",
     org: "BRAC University",
     status: "Grade: 3.86",
-    activities: ["Merit scholarship every semester", "Skills: PHP, SciPy, +5"],
+    activities: [
+      "Merit scholarship every semester",
+      "Deans list in 8 consecutive",
+      "Secretary of Finance and Event Management at Arts and Photography Society",
+    ],
     period: "2022 - 2026",
   },
   {
     degree: "HSC, Science",
     org: "Notre Dame College Mymensingh",
     status: "Grade: 5",
+    activities: ["Debate club", "Science club"],
     period: "Jun 2018 - Jun 2020",
   },
   {
     degree: "SSC, Science",
     org: "Chandipasha Govt. High School",
     status: "Grade: 4.89",
-    activities: ["Bangladesh Scouts", "Dancing (group)"],
+    activities: ["Bangladesh Scouts", "Dance"],
     period: "Jan 2012 - Feb 2018",
   },
 ];

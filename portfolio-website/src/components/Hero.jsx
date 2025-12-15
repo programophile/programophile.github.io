@@ -93,7 +93,11 @@ const Hero = () => {
             <button className="btn btn-outline" onClick={scrollToProjects}>
               View Projects
             </button>
-            <a href="/cv.pdf" className="btn btn-outline" download>
+            <a
+              href="/cv/Sad_Yeamin_Sayem.pdf"
+              className="btn btn-outline"
+              download="Sad_Yeamin_Sayem_CV.pdf"
+            >
               Download CV
             </a>
           </motion.div>
